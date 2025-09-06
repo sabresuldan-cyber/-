@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدونة المحامي صبري السلطان | القانونية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --light-beige: #f8f4ef;
+            --medium-beige: #e9dfd2;
+            --dark-brown: #6d4c41;
+            --light-brown: #a1887f;
+            --accent-gold: #c8a971;
+            --text-color: #333;
+            --white: #ffffff;
+            --gray: #777;
+            --light-gray: #f5f5f5;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-beige);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, var(--dark-brown), var(--light-brown));
+            color: var(--white);
+            padding: 15px 0;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 3px solid var(--light-beige);
+            object-fit: cover;
+            margin-left: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-text h1 {
+            font-size: 1.6rem;
+            margin-bottom: 5px;
+        }
+        
+        .logo-text p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 15px;
+        }
+        
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+        
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Date Bar */
+        .date-bar {
+            background-color: var(--medium-beige);
+            padding: 8px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--dark-brown);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .date-bar span {
+            margin: 0 15px;
+        }
+        
+        .date-bar i {
+            margin-left: 5px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            color: var(--white);
+            text-align: center;
+            padding: 0 20px;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero-content h2 {
+            font-size: 2.3rem;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero-content p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--dark-brown);
+            color: var(--white);
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn:hover {
+            background-color: var(--accent-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+        }
+        
+        /* Visitor Counter */
+        .visitor-counter {
+            background: linear-gradient(to right, var(--accent-gold), var(--light-brown));
+            padding: 15px 0;
+            text-align: center;
+            color: var(--white);
+            font-weight: 600;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .counter-number {
+            font-size: 1.8rem;
+            margin: 0 5px;
+            color: var(--dark-brown);
+            font-weight: 700;
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding: 50px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--dark-brown);
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background-color: var(--accent-gold);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .feature-box {
+            background-color: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .feature-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .feature-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .feature-box:hover .feature-img img {
+            transform: scale(1.1);
+        }
+        
+        .feature-content {
+            padding: 20px;
+        }
+        
+        .feature-content h3 {
+            color: var(--dark-brown);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        /* News Section */
+        .news-section {
+            background-color: var(--light-gray);
+            padding: 50px 0;
+        }
+        
+        .news-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .news-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+        
+        .news-img {
+            height: 180px;
+            overflow: hidden;
+        }
+        
+        .news-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .news-content {
+            padding: 20px;
+        }
+        
+        .news-date {
+            color: var(--gray);
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .news-title {
+            color: var(--dark-brown);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        /* Lawyer Section */
+        .lawyer-section {
+            background: linear-gradient(to right, var(--medium-beige), var(--light-beige));
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .lawyer-profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .lawyer-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid var(--light-beige);
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .lawyer-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .lawyer-info {
+            max-width: 800px;
+        }
+        
+        .lawyer-info h2 {
+            color: var(--dark-brown);
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        
+        /* Comments Section */
+        .comments-section {
+            padding: 50px 0;
+            background-color: var(--white);
+        }
+        
+        .comment-form {
+            background-color: var(--light-gray);
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--dark-brown);
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 0 2px rgba(200, 169, 113, 0.2);
+        }
+        
+        .comments-list {
+            margin-top: 30px;
+        }
+        
+        .comment {
+            background-color: var(--light-gray);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        .comment-author {
+            font-weight: 600;
+            color: var(--dark-brown);
+        }
+        
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            background-color: #25d366;
+            color: var(--white);
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            animation: pulse 1.5s infinite;
+        }
+        
+        .whatsapp-float i {
+            font-size: 24px;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-brown);
+            color: var(--white);
+            padding: 40px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent-gold);
+        }
+        
+        .footer-section p {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a {
+            color: var(--light-beige);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: block;
+            padding: 5px 0;
+        }
+        
+        .footer-section ul li a:hover {
+            color: var(--accent-gold);
+            padding-right: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--accent-gold);
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: var(--medium-beige);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-bottom: 15px;
+                justify-content: center;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 5px 8px;
+            }
+            
+            .hero-content h2 {
+                font-size: 2rem;
+            }
+            
+            .hero-content p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .logo img {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .logo-text h1 {
+                font-size: 1.4rem;
+            }
+            
+            nav ul li a {
+                font-size: 0.85rem;
+                padding: 4px 8px;
+            }
+            
+            .date-bar {
+                flex-direction: column;
+                gap: 5px;
+                padding: 10px 0;
+            }
+            
+            .hero {
+                height: 400px;
+            }
+            
+            .feature-box, .news-card {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .lawyer-img {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .whatsapp-float {
+                bottom: 20px;
+                left: 20px;
+                width: 50px;
+                height: 50px;
+            }
+            
+            .counter-number {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/967774968713" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="المحامي صبري السلطان">
+                    <div class="logo-text">
+                        <h1>المحامي صبري السلطان</h1>
+                        <p>مدونة قانونية متخصصة</p>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="#">الأبحاث القانونية</a></li>
+                        <li><a href="#">الاقتراحات والتعديلات</a></li>
+                        <li><a href="#">الدعاوى والطعون</a></li>
+                        <li><a href="#">المذكرات القضائية</a></li>
+                        <li><a href="#">اتصل بي</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Date Bar -->
+    <div class="date-bar">
+        <span><i class="far fa-calendar-alt"></i> التاريخ الميلادي: <span id="gregorian-date"></span></span>
+        <span><i class="far fa-calendar"></i> التاريخ الهجري: <span id="hijri-date"></span></span>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>مدونة قانونية متخصصة في القانون المدني اليمني</h2>
+            <p>أبحاث قانونية، اقتراحات وتعديلات قضائية، شروحات قانونية، ونماذج دعاوى وطعون جاهزة للتحميل</p>
+            <a href="#features" class="btn">استكشف المدونة</a>
+        </div>
+    </section>
+
+    <!-- Visitor Counter -->
+    <div class="visitor-counter">
+        <i class="fas fa-users"></i> عدد الزوار: <span class="counter-number">2,034,761</span> زائر
+    </div>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <h2 class="section-title">أقسام المدونة</h2>
+            <div class="features" id="features">
+                <div class="feature-box">
+                    <div class="feature-img">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="أبحاث قانونية">
+                    </div>
+                    <div class="feature-content">
+                        <h3>أبحاث قانونية</h3>
+                        <p>أبحاث متخصصة في القانون المدني اليمني تشمل التحليل القانوني والتطبيقات القضائية.</p>
+                        <a href="#" class="btn">استكشف الأبحاث</a>
+                    </div>
+                </div>
+                
+                <div class="feature-box">
+                    <div class="feature-img">
+                        <img src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="اقتراحات وتعديلات">
+                    </div>
+                    <div class="feature-content">
+                        <h3>اقتراحات وتعديلات</h3>
+                        <p>اقتراحات وتعديلات قضائية وشرعية تهدف إلى تطوير النظام القانوني.</p>
+                        <a href="#" class="btn">اطلع على الاقتراحات</a>
+                    </div>
+                </div>
+                
+                <div class="feature-<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدونة المحامي صبري السلطان | القانونية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --light-beige: #f8f4ef;
+            --medium-beige: #e9dfd2;
+            --dark-brown: #6d4c41;
+            --light-brown: #a1887f;
+            --accent-gold: #c8a971;
+            --text-color: #333;
+            --white: #ffffff;
+            --gray: #777;
+            --light-gray: #f5f5f5;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        body {
+            background-color: var(--light-beige);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(to right, var(--dark-brown), var(--light-brown));
+            color: var(--white);
+            padding: 15px 0;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 3px solid var(--light-beige);
+            object-fit: cover;
+            margin-left: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-text h1 {
+            font-size: 1.6rem;
+            margin-bottom: 5px;
+        }
+        
+        .logo-text p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 15px;
+        }
+        
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+        
+        nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Date Bar */
+        .date-bar {
+            background-color: var(--medium-beige);
+            padding: 8px 0;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--dark-brown);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .date-bar span {
+            margin: 0 15px;
+        }
+        
+        .date-bar i {
+            margin-left: 5px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            color: var(--white);
+            text-align: center;
+            padding: 0 20px;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero-content h2 {
+            font-size: 2.3rem;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero-content p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--dark-brown);
+            color: var(--white);
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn:hover {
+            background-color: var(--accent-gold);
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+        }
+        
+        /* Visitor Counter */
+        .visitor-counter {
+            background: linear-gradient(to right, var(--accent-gold), var(--light-brown));
+            padding: 15px 0;
+            text-align: center;
+            color: var(--white);
+            font-weight: 600;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .counter-number {
+            font-size: 1.8rem;
+            margin: 0 5px;
+            color: var(--dark-brown);
+            font-weight: 700;
+        }
+        
+        /* Main Content */
+        .main-content {
+            padding: 50px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--dark-brown);
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background-color: var(--accent-gold);
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .feature-box {
+            background-color: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .feature-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .feature-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .feature-box:hover .feature-img img {
+            transform: scale(1.1);
+        }
+        
+        .feature-content {
+            padding: 20px;
+        }
+        
+        .feature-content h3 {
+            color: var(--dark-brown);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        /* News Section */
+        .news-section {
+            background-color: var(--light-gray);
+            padding: 50px 0;
+        }
+        
+        .news-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .news-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+        
+        .news-img {
+            height: 180px;
+            overflow: hidden;
+        }
+        
+        .news-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .news-content {
+            padding: 20px;
+        }
+        
+        .news-date {
+            color: var(--gray);
+            font-size: 0.85rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .news-title {
+            color: var(--dark-brown);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        /* Lawyer Section */
+        .lawyer-section {
+            background: linear-gradient(to right, var(--medium-beige), var(--light-beige));
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .lawyer-profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .lawyer-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid var(--light-beige);
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .lawyer-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .lawyer-info {
+            max-width: 800px;
+        }
+        
+        .lawyer-info h2 {
+            color: var(--dark-brown);
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        
+        /* Comments Section */
+        .comments-section {
+            padding: 50px 0;
+            background-color: var(--white);
+        }
+        
+        .comment-form {
+            background-color: var(--light-gray);
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--dark-brown);
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 0 2px rgba(200, 169, 113, 0.2);
+        }
+        
+        .comments-list {
+            margin-top: 30px;
+        }
+        
+        .comment {
+            background-color: var(--light-gray);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .comment-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        .comment-author {
+            font-weight: 600;
+            color: var(--dark-brown);
+        }
+        
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            background-color: #25d366;
+            color: var(--white);
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            animation: pulse 1.5s infinite;
+        }
+        
+        .whatsapp-float i {
+            font-size: 24px;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-brown);
+            color: var(--white);
+            padding: 40px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-section h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent-gold);
+        }
+        
+        .footer-section p {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a {
+            color: var(--light-beige);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: block;
+            padding: 5px 0;
+        }
+        
+        .footer-section ul li a:hover {
+            color: var(--accent-gold);
+            padding-right: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--accent-gold);
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: var(--medium-beige);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-bottom: 15px;
+                justify-content: center;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 5px 8px;
+            }
+            
+            .hero-content h2 {
+                font-size: 2rem;
+            }
+            
+            .hero-content p {
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .logo img {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .logo-text h1 {
+                font-size: 1.4rem;
+            }
+            
+            nav ul li a {
+                font-size: 0.85rem;
+                padding: 4px 8px;
+            }
+            
+            .date-bar {
+                flex-direction: column;
+                gap: 5px;
+                padding: 10px 0;
+            }
+            
+            .hero {
+                height: 400px;
+            }
+            
+            .feature-box, .news-card {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .lawyer-img {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .whatsapp-float {
+                bottom: 20px;
+                left: 20px;
+                width: 50px;
+                height: 50px;
+            }
+            
+            .counter-number {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/967774968713" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="المحامي صبري السلطان">
+                    <div class="logo-text">
+                        <h1>المحامي صبري السلطان</h1>
+                        <p>مدونة قانونية متخصصة</p>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="#">الأبحاث القانونية</a></li>
+                        <li><a href="#">الاقتراحات والتعديلات</a></li>
+                        <li><a href="#">الدعاوى والطعون</a></li>
+                        <li><a href="#">المذكرات القضائية</a></li>
+                        <li><a href="#">اتصل بي</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Date Bar -->
+    <div class="date-bar">
+        <span><i class="far fa-calendar-alt"></i> التاريخ الميلادي: <span id="gregorian-date"></span></span>
+        <span><i class="far fa-calendar"></i> التاريخ الهجري: <span id="hijri-date"></span></span>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>مدونة قانونية متخصصة في القانون المدني اليمني</h2>
+            <p>أبحاث قانونية، اقتراحات وتعديلات قضائية، شروحات قانونية، ونماذج دعاوى وطعون جاهزة للتحميل</p>
+            <a href="#features" class="btn">استكشف المدونة</a>
+        </div>
+    </section>
+
+    <!-- Visitor Counter -->
+    <div class="visitor-counter">
+        <i class="fas fa-users"></i> عدد الزوار: <span class="counter-number">2,034,761</span> زائر
+    </div>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <div class="container">
+            <h2 class="section-title">أقسام المدونة</h2>
+            <div class="features" id="features">
+                <div class="feature-box">
+                    <div class="feature-img">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="أبحاث قانونية">
+                    </div>
+                    <div class="feature-content">
+                        <h3>أبحاث قانونية</h3>
+                        <p>أبحاث متخصصة في القانون المدني اليمني تشمل التحليل القانوني والتطبيقات القضائية.</p>
+                        <a href="#" class="btn">استكشف الأبحاث</a>
+                    </div>
+                </div>
+                
+                <div class="feature-box">
+                    <div class="feature-img">
+                        <img src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="اقتراحات وتعديلات">
+                    </div>
+                    <div class="feature-content">
+                        <h3>اقتراحات وتعديلات</h3>
+                        <p>اقتراحات وتعديلات قضائية وشرعية تهدف إلى تطوير النظام القانوني.</p>
+                      <a href="#" class="btn">اطلع على الاقتراحات</a>
+                    </div>
+                </div>
+                
+                <div class="feature-box">
+                    <div class="feature-img">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="نماذج قضائية">
+                    </div>
+                    <div class="feature-content">
+                        <h3>نماذج قضائية</h3>
+                        <p>مذكرات ودعاوى وطعون جاهزة للتحميل بصيغة Word لتسهيل الإجراءات القانونية.</p>
+                        <a href="#" class="btn">تحميل النماذج</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <div class="container">
+            <h2 class="section-title">أخبار قانونية</h2>
+            <div class="news-container">
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="https://images.unsplash.com/photo-1566842600175-97dca3dfc3c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="تعديلات قانونية">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date"><i class="far fa-calendar"></i> 15 أكتوبر 2023</span>
+                        <h3 class="news-title">مجلس النواب يقر تعديلات جديدة على قانون الأحوال الشخصية</h3>
+                        <p>وافق مجلس النواب على حزمة تعديلات جديدة على قانون الأحوال الشخصية بهدف...</p>
+                        <a href="#" class="btn">قراءة المزيد</a>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="ندوة قانونية">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date"><i class="far fa-calendar"></i> 10 أكتوبر 2023</span>
+                        <h3 class="news-title">ندوة حول تطوير النظام القضائي اليمني في صنعاء</h3>
+                        <p>عقدت في العاصمة صنعاء ندوة قانونية حول سبل تطوير النظام القضائي اليمني...</p>
+                        <a href="#" class="btn">قراءة المزيد</a>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <div class="news-img">
+                        <img src="https://images.unsplash.com/photo-1590086782957-93c06ef2b5ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="حلقة نقاش">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date"><i class="far fa-calendar"></i> 5 أكتوبر 2023</span>
+                        <h3 class="news-title">حلقة نقاش حول التحديات التي تواجه المحامين في اليمن</h3>
+                        <p>نظمت نقابة المحامين اليمنيين حلقة نقاش حول أبرز التحديات التي تواجه...</p>
+                        <a href="#" class="btn">قراءة المزيد</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lawyer Section -->
+    <section class="lawyer-section">
+        <div class="container">
+            <h2 class="section-title">المحامي صبري السلطان</h2>
+            <div class="lawyer-profile">
+                <div class="lawyer-img">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="المحامي صبري السلطان">
+                </div>
+                <div class="lawyer-info">
+                    <h2>المحامي صبري السلطان</h2>
+                    <p>محامٍ ومستشار قانوني متخصص في القانون المدني اليمني، حاصل على درجة الماجستير في القانون، ومتمرس في صياغة الدعاوى والطعون والمذكرات القضائية. يهدف من خلال هذه المدونة إلى نشر المعرفة القانونية وتقديم الاستشارات القانونية للمواطنين.</p>
+                    <p>للتواصل: +967774968713</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="comments-section">
+        <div class="container">
+            <h2 class="section-title">التعليقات</h2>
+            
+            <div class="comment-form">
+                <h3>أضف تعليقك</h3>
+                <form id="commentForm">
+                    <div class="form-group">
+                        <label for="name">الاسم</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">التعليق</label>
+                        <textarea id="comment" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">إرسال التعليق</button>
+                </form>
+            </div>
+            
+            <div class="comments-list">
+                <div class="comment">
+                    <div class="comment-header">
+                        <span class="comment-author">أحمد محمد</span>
+                        <span class="comment-date">12 أكتوبر 2023</span>
+                    </div>
+                    <p>مدونة رائعة ومحتوى قانوني قيم. استفدت كثيراً من النماذج القانونية المتاحة للتحميل.</p>
+                </div>
+                
+                <div class="comment">
+                    <div class="comment-header">
+                        <span class="comment-author">فاطمة عبدالله</span>
+                        <span class="comment-date">8 أكتوبر 2023</span>
+                    </div>
+                    <p>بحثكم حول التعديلات المقترحة على قانون الأحوال الشخصية كان شاملاً وقيماً. شكراً لجهودكم.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عن المدونة</h3>
+                    <p>مدونة قانونية متخصصة في القانون المدني اليمني، تقدم أبحاث قانونية، اقتراحات وتعديلات قضائية، وشروحات قانونية.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="#">الأبحاث القانونية</a></li>
+                        <li><a href="#">الاقتراحات والتعديلات</a></li>
+                        <li><a href="#">الدعاوى والطعون</a></li>
+                        <li><a href="#">المذكرات القضائية</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>اتصل بنا</h3>
+                    <p>+967774968713</p>
+                    <p>example@example.com</p>
+                    <p>الجمهورية اليمنية</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 مدونة المحامي صبري السلطان القانونية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Display current dates
+        function updateDates() {
+            const now = new Date();
+            
+            // Gregorian date
+            const gregorianDate = now.toLocaleDateString('ar-EG', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            document.getElementById('gregorian-date').textContent = gregorianDate;
+            
+            // Hijri date calculation (simplified)
+            const hijriMonths = ['محرم', 'صفر', 'ربيع الأول', 'ربيع الثاني', 'جمادى الأولى', 'جمادى الآخرة', 'رجب', 'شعبان', 'رمضان', 'شوال', 'ذو القعدة', 'ذو الحجة'];
+            const hijriYear = 1445;
+            const hijriMonth = hijriMonths[now.getMonth()];
+            const hijriDay = now.getDate() - 1; // Approximate conversion
+            
+            document.getElementById('hijri-date').textContent = `${hijriDay} ${hijriMonth} ${hijriYear} هـ`;
+        }
+        
+        // Comment form handling
+        document.getElementById('commentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('شكراً لك على تعليقك! سيتم مراجعته ونشره قريباً.');
+            this.reset();
+        });
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateDates();
+        });
+    </script>
+</body>
+</html>
